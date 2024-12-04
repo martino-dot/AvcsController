@@ -5,8 +5,8 @@ Signal - normally high, pulled low when triggered.
 
 Signal output goes through a 100 ohm resistor, then is clamped to 3.3v with a zener diode to ground, then goes through a 200 ohm resistor and into the Arduino input pin.
 
+If the cam sensors have 2 wires, you'll have to purchase or make your own VR Conditioner board (check the Speeduino project for more information) to convert the signal into something the Arduino can handle. 
 
-
-Crank sensor is a TCRT5000 on carrier board with an LM393, available from many different vendors.
+Crank sensor is a TCRT5000 on carrier board with an LM393, available from many different vendors. Either get a 3.3v board, or if you get a 5v version of the board, clamp the voltage down to 3.3v with a zener diode to ground.
 Example: http://osoyoo.com/2017/08/15/tcrt5000-infrared-line-tracking-sensor/
 
